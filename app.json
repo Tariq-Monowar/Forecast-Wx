@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Forecast-Wx",
-    "slug": "Forecast-Wx",
+    "slug": "forecastwx",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tariqmonowar.forecastwx"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "05d985de-a084-48b1-9223-995663d780c9"
+      }
     }
   }
 }
