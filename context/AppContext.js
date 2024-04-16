@@ -2,8 +2,8 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { getData, storageData } from "./../util/asyncstorage";
 import { ToastAndroid } from "react-native";
-const apikey = "ac9f700bd5764b35be254001242602"
-// const apikey = "f3989aabde9b4733adc50911242403";
+const apikey = "****************************"
+// const apikey = "****************************";
 
 export const AppContext = createContext(null);
 
@@ -42,7 +42,7 @@ export const AppContextProvider = ({ children }) => {
     try {
       setWLoading(true);
       const res = await axios.get(
-        `https://api.weatherapi.com/v1/forecast.json?key=ac9f700bd5764b35be254001242602&q=${cityName}&days=7&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apikey}=${cityName}&days=7&aqi=no&alerts=no`
       );
       setWeatherData(res.data);
       setWLoading(false);
